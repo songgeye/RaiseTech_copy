@@ -1,5 +1,5 @@
 .key_visual {
-    background: url("image/bg-hero3.png") no-repeat center center ;
+    background: url("../image/bg-hero3.png") no-repeat center center ;
     background-size: cover;
     background-attachment: fixed;
     height: 650px;
@@ -25,7 +25,7 @@
   }
   
   .key_visual__layer1 {
-    background: url("image/bg-hero1.png") no-repeat center center ;
+    background: url("../image/bg-hero1.png") no-repeat center center ;
     z-index: 200;
     position: absolute;
     display: flex;
@@ -43,7 +43,7 @@
   }
   
   .key_visual__layer2 {
-    background: url("image/bg-hero2.png") no-repeat center center ;
+    background: url("../image/bg-hero2.png") no-repeat center center ;
     z-index: 100;
     position: absolute;
     height: 100%;
