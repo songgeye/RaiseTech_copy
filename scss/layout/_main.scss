@@ -1,0 +1,8 @@
+main {
+    padding-top: 70px;
+    @include hamburger__breakP {
+      padding-top: 50px;
+    }
+  }
+  
+  

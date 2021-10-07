@@ -1,0 +1,6 @@
+.nav {
+    line-height: 70px;
+      @include hamburger__breakP {
+        line-height: 47px;
+      }
+  }

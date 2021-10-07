@@ -1,0 +1,42 @@
+.open_drpdwnmenu {
+    display: none;
+    background-color: #fff;
+    border: none;
+    @include hamburger__breakP {
+        position: relative;
+        top: -47px;
+        // right: 0;
+        
+        margin: 0 0 0 auto;
+        display: block;
+        width: 50px;
+        height: 100%;
+        transition: all .3s;
+    }
+    .horizon{
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 24px;
+        top: 23px;
+        left: 12px;
+        background-color: #000;
+    }
+    .vertical{
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 2px;
+        top: 12px;
+        left: 23px;
+        background-color: #000;
+        transition: all .3s;
+    }
+}
+
+.open_drpdwnmenu.active {
+    .vertical {
+        transform: rotate(-90deg) translate(-50%, 0);
+        transform-origin: 0% 50%;
+    }
+}

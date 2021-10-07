@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1100;
+    @include hamburger__breakP {
+      height: 50px;
+    }
+  }

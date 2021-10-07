@@ -1,0 +1,31 @@
+$logo: 1280px; // ロゴ横を消す
+$distance: 1260px; //メニュー余白変え 
+$hamburger__breakP: 1200px;  //ハンバーガーメニュー 
+$tablet:1080px;  //メイン下変え
+$smartphone: 767px; //スマホスタイル
+
+  @mixin logo {
+    @media (max-width: ( $logo )){
+        @content;
+    }
+  }
+  @mixin distance {
+    @media (max-width: ( $distance )){
+        @content;
+    }
+  }
+  @mixin hamburger__breakP {
+    @media (max-width: ( $hamburger__breakP )){
+        @content;
+    }
+  }
+  @mixin tablet {
+    @media (max-width: ( $tablet )){
+        @content;
+    }
+  }
+  @mixin smartphone {
+    @media (max-width: ( $smartphone )){
+        @content;
+    }
+  }

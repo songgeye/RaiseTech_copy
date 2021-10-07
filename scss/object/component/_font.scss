@@ -1,0 +1,101 @@
+.font_area {
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 50px;
+      @include smartphone {
+        height: auto;
+      }
+  }
+
+.font_main__content {
+    position: relative;
+    width: 1010px; //幅の調整
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+      @include tablet{
+          width: 100%;
+      };
+      @include smartphone{
+          position: static;
+          width: 100%;
+          transform: translateX(0%);
+      }
+}
+  
+.font_space {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: -200px;
+  padding: 0;
+    @include smartphone {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      padding-top: 64px;
+      align-items: center;
+    }
+}
+
+.font_option {
+  width: 229px;
+  text-align: center;
+    @include tablet {
+      width: 100%;
+    }
+}
+
+  .font_circle {
+    width: 230px;
+    height: 230px;
+    background-color: #fff;
+    border: solid 6px black;
+    border-radius: 50%;
+    padding-top: 60px;
+      @include tablet {
+        margin:0 auto;
+      }
+      @include smartphone{
+        margin: 0 auto;
+      }
+  }
+  
+  .font_thema {
+    color: #fff;
+    margin: 0.2em 0 0 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 12px;
+  }
+  
+  .font_content {
+    color: #fff;
+    margin: 0.5em 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.7;
+      @include tablet{
+          margin: 10px 15px;
+      }
+      @include smartphone {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin:10px 0px 50px 0px;
+      }
+  } 
+  
+  .i {
+    -webkit-text-stroke: 3px #fff;
+    font-weight: 300;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }

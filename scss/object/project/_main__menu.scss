@@ -1,0 +1,125 @@
+.key_visual {
+    background: url("/image/bg-hero3.png") no-repeat center center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+      @include hamburger__breakP {
+        background-position: center -20px;
+      }
+      @include smartphone {
+        height: 320px;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: -30px;
+      }
+  }
+  
+  .key_visual__layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .key_visual__layer1 {
+    background: url("/image/bg-hero1.png") no-repeat center center ;
+    z-index: 200;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    line-height: 1.7;
+    padding-top: 80px;
+    align-items: flex-start;
+      @include smartphone {
+        background-position: center -30px;
+        background-size: cover;
+        align-items: flex-end;
+      }
+  }
+  
+  .key_visual__layer2 {
+    background: url("/image/bg-hero2.png") no-repeat center center ;
+    z-index: 100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @include smartphone {
+      padding-top: 0px;
+      align-items: flex-end;
+      background-size: cover;
+      background-position: center -30px;
+    }
+  }
+  
+  .key_visual_content {
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    padding: 43px 13px 19px;
+    border-radius: 10px;
+      // @include tablet {
+      //   padding: 43px 18px 19px;
+      // }
+      @include smartphone {
+        width: 100%;
+        // margin: 0;
+        padding: 10px 0 0 0;
+        border-radius: 0;
+    }
+  
+    img {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      width: 280px;
+      height: auto;
+        @include smartphone {
+          display: none;
+        }
+    }
+  
+    p {
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin: 0.8em 0 0.8em 0;
+      // margin-top: 0.8em;
+      // margin-bottom: 0.8em;
+        // @include tablet {
+        //   margin-top: 0.8em;
+        // }
+        @include smartphone {
+          font-size: 1.4rem;
+          line-height: 22px;
+        }
+    }
+  
+    a {
+      text-decoration: none;
+      background-color: #2498b3;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bolder;
+      padding: 24px 37px;
+      border-radius: 4px;
+        @include smartphone {
+        width: 100%;
+        font-size: 1.7rem;
+        // margin: 0;
+        padding: 12px 18px;
+        border-radius: 3;
+        }
+    }
+  }
+  
+  .kbc_btn {
+    display: inline-block;
+    padding: 30px 50px;
+      @include smartphone {
+        padding: 10px 50px 30px 50px;
+      }
+  }

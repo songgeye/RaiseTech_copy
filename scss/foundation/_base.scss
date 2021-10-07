@@ -1,0 +1,26 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+  
+    &::before, &::after {
+      box-sizing: border-box;
+    }
+  }
+
+  body {
+    line-height: 1.7;
+  }
+
+  a{
+    color: #131d34;
+    text-decoration: none;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Noto Sans JP",MyYuGothicM,YuGothic,-apple-system,BlinkMacSystemFont,"Hiragino kaku Gothic ProN",Meiryo,Verdana,arial,helvetica,sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
